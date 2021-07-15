@@ -1,5 +1,5 @@
 This repo is deployed at 
 
-http://andyalphablog.herokuapp.com/
+https://andyalphablog.herokuapp.com/
 
-http://andyalphablog.herokuapp.com/about
+https://andyalphablog.herokuapp.com/about
