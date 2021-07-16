@@ -1,0 +1,18 @@
+<h1>Create New Article</h1>
+<% if @article.errors.any? %>
+<ul>
+<% @article.errors.full_messages.each do |error| %>
+   <li><%= error %></li>
+<% end %>
+</ul>
+<% end %>
+
+<%= form_with scope: :article , url: articles_path  , local:true do |form| %>
+<%= form.label :Title %><br>
+<%= form.text_field :Title %> <br><br>
+<%= form.label :author %><br>
+<%= form.text_field :author %> <br><br>
+<%= form.label :Description %> <br>
+<%= form.text_area :Description %> <br><br>
+<%= form.submit "Create Articles" %>
+<% end %>
