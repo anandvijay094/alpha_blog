@@ -34,7 +34,6 @@ td
 }
 .Buttons{
   font-weight: bolder;
-  color: chartreuse;
   margin: auto;
   font-size: larger;
   background-color: red;
@@ -54,4 +53,11 @@ p{
 }
 .action:hover{
   color:white;
+}
+.articleBody
+{
+  margin:auto;
+  width: max-content;
+  background:chartreuse;
+  padding: 5%;
 }
