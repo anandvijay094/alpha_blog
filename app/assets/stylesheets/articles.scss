@@ -3,6 +3,10 @@ table,th,td,tr{
   border-collapse: collapse;
   margin: auto;
 }
+th
+{
+  background-color: white;
+}
 table
 {
   color: red;
@@ -46,6 +50,7 @@ p{
   font-weight: bolder;
   cursor:pointer;
   padding: auto;
+  background-color:yellow;
 }
 .action:hover{
   color:white;
