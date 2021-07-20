@@ -1,4 +1,4 @@
-<h1>Create New Article</h1>
+<h1>Edit Article</h1>
 <div id="error_id">
 <% if @article.errors.any? %>
 <ul>
@@ -9,7 +9,7 @@
 <% end %>
 </div>
 <div id="form_id"> 
-<%= form_with scope: :article , url: articles_path  , local:true do |form| %>
+<%= form_with(model: @article , local:true)  do |form| %>
    <p>
 <%= form.label :Title %><br>
 <%= form.text_field :Title %> 
@@ -23,7 +23,7 @@
 <%= form.text_area :Description %> 
 </p>
 <p>
-<%= form.submit "Create Articles" %>
+<%= form.submit "Update" %>
 </p>
 <% end %>
 </div>
