@@ -28,6 +28,25 @@ td
   font-weight: bolder;
   padding: 1%;
 }
+.Buttons{
+  font-weight: bolder;
+  color: chartreuse;
+  margin: auto;
+  font-size: larger;
+  background-color: red;
+  width:fit-content;
+  text-decoration: none;
+}
 p{
   margin: auto;
+}
+
+.action{
+  color:black;
+  font-weight: bolder;
+  cursor:pointer;
+  padding: auto;
+}
+.action:hover{
+  color:white;
 }

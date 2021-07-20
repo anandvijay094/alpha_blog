@@ -1,3 +1,6 @@
 <h1> Articles Page </h1>
 <h4><strong>Title: </strong><%=  @article.Title %> </h4>
 <h5><strong>Description: </strong><%= @article.Description%></h5>
+<%= link_to 'Edit' , edit_article_path(@article.id)%> || 
+<%= link_to 'Delete' , article_path(@article.id) , method: :delete , data: {confirm: "Are you sure ?"}%> ||
+<%= link_to 'Home' , articles_path%>
