@@ -45,14 +45,13 @@ p{
 }
 
 .action{
-  color:black;
   font-weight: bolder;
   cursor:pointer;
   padding: auto;
-  background-color:yellow;
+  background-color:hotpink;
 }
-.action:hover{
-  color:white;
+a:hover{
+  color:black;
 }
 .articleBody
 {
@@ -60,4 +59,9 @@ p{
   width:30%;
   background-color:chartreuse;
   padding: 5%;
+}
+a{
+  text-decoration: none;
+  color:lightgreen;
+  
 }

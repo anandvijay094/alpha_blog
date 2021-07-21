@@ -12,9 +12,7 @@
 
   <body>
 
-  <% flash.each do |key,msg| %>
-   <h2> <%= msg %> </h2>
-  <% end %>
+  <%= render 'layouts/flashMessages' %>
     <%= yield %>
   </body>
 </html>

@@ -1,32 +1,6 @@
 <h1>Create New Article</h1>
-<div id="error_id">
-<% if @article.errors.any? %>
-<ul>
-<% @article.errors.full_messages.each do |error| %>
-   <li><%= error %></li>
-<% end %>
-</ul>
-<% end %>
-</div>
-<div id="form_id"> 
-<%= form_with scope: :article , url: articles_path  , local:true do |form| %>
-   <p>
-<%= form.label :Title %><br>
-<%= form.text_field :Title %> 
-</p>
-<p>
-<%= form.label :author %><br>
-<%= form.text_field :author %> 
-</p>
-<p>
-<%= form.label :Description %> <br>
-<%= form.text_area :Description %> 
-</p>
-<p>
-<%= form.submit "Create Articles" %>
-</p>
-<% end %>
-</div>
+<%= render 'validationerror' %>
+<%= render 'formArticles' %>
 <br><br>
 <div class="Buttons" > 
 <%= link_to 'Return to listing' , articles_path %>
